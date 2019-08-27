@@ -71,7 +71,7 @@ public class A1Novice {
 
 		// sum method
 		static double sum(int[] itemNum, double[] itemPrice) {
-			double x = 0.0;
+			double x = 0.00;
 			for ( int i = 0; i < itemNum.length; i++) {
 				x += (itemNum[i] * itemPrice[i]);
 			}
