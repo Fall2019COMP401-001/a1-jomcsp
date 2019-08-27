@@ -34,6 +34,11 @@ public class A1Adept {
 				itemPrice[z] = scan.nextDouble();
 			}
 			totalPrice[i] = sum(itemNum, itemPrice);
+			for (int j = 0; j < totalNum[i]; j++) {
+				itemNum[j] = 0;
+				itemPrice[j] = 0;
+			}
+			
 			
 			
 		}
@@ -41,8 +46,8 @@ public class A1Adept {
 		
 		scan.close();
 		
-		for (int i = 0; i < custNum.length; i++) {
-			System.out.println(firstNameConverter(custFName, i) + custLName[i] + ": " + totalPrice[i]) ;
+		for (int i = 0; i < count; i++) {
+			System.out.println(firstNameConverter(custFName, i) + " " + custLName[i] + ": " + totalPrice[i]) ;
 		}
 		
 		
