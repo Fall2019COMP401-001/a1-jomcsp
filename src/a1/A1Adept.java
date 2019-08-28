@@ -66,9 +66,24 @@ public class A1Adept {
 				
 		}
 		scan.close();
-		System.out.println(String.format("%.2f", Max(shopperList).total));
-		System.out.println(String.format("%.2f", Least(shopperList).total));
-		System.out.println(String.format("%.2f", Average(shopperList)));
+		
+		
+		
+		// printing answers
+		
+		Shopper big = Max(shopperList);
+		Shopper small = Least(shopperList);
+		
+		
+		
+		System.out.println("Biggest:  " + big.fName + big.lName + "(" + String.format(
+				"%.2f", big.total) + ")" );
+		
+		System.out.println("Smallest:  " + small.fName + small.lName + "(" + String.format(
+				"%.2f", small.total) + ")" );
+		
+		
+		System.out.println("Average:  " + String.format("%.2f", Average(shopperList)));
 		
 	
 	
