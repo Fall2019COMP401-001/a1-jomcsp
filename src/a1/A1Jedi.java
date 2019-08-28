@@ -36,6 +36,10 @@ public class A1Jedi {
 					int[] quan = new int [x];
 					String[] grocery1 = new String [x];
 					
+					for (int z = 0; z < groceryList.length; z++) {
+						groceryList[z].bo = false;
+					}
+					
 						for (int j = 0; j < x; j++) {
 							
 							
@@ -43,32 +47,34 @@ public class A1Jedi {
 							grocery1[j] = scan.next();
 							
 							
+							
+						
+							
 							// loops through my first grocery list and adds to the count and indv count.
 							for (int k = 0; k < groceryList.length; k++) {
 								
 								if (grocery1[j].equals( groceryList [k].name)) {
 									groceryList[k].count += quan[j];
 									
-									// makes so dont double count
-									if (!groceryList[k].bo && grocery1[j].equals( groceryList [k].name)) {
-										groceryList[k].indv += 1;
-										System.out.println("true")
-										groceryList[k].bo = true;
+									
+									
+									if (!groceryList[k].bo) {
+									groceryList[k].indv += 1;
+									
 									}
-								
+									
+									groceryList[k].bo = true;
 								}
-								
-								
-								
-							}
-							//resets all indv buying
-							for (int z = 0; z < groceryList.length; z++) {
-								system.out.println("false")
-							
-								groceryList[z].bo = false;
+					
 							}
 							
+
 						}
+						
+						
+						
+				
+						
 						// creates the shoppper into my shopper array list
 						shopperList[i] = new Shopper(fNames[i], lNames[i], x, quan, grocery1);
 					
