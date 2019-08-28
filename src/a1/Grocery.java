@@ -6,6 +6,7 @@ public class Grocery {
 		double price;
 		int count = 0;
 		int indv = 0;
+		boolean bo = false;
 		
 		
 
