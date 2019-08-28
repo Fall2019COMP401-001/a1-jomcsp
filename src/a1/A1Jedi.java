@@ -50,7 +50,7 @@ public class A1Jedi {
 									groceryList[k].count += quan[j];
 									
 									// makes so dont double count
-									if (!groceryList[k].bo) {
+									if (!groceryList[k].bo && grocery1[j].equals( groceryList [k].name)) {
 										groceryList[k].indv += 1;
 										groceryList[k].bo = true;
 									}
