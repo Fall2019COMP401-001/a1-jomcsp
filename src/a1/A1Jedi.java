@@ -64,7 +64,7 @@ public class A1Jedi {
 			if (groceryList[i].count == 0 ) {
 				System.out.println("No customers bought " + groceryList[i].name);
 			} else {
-				System.out.println(groceryList[i].indv + "customers bought " + groceryList[i].count + 
+				System.out.println(groceryList[i].indv + " " + "customers bought " + groceryList[i].count + 
 						" " + groceryList[i].name);
 			}
 		}
