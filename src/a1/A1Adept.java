@@ -76,10 +76,10 @@ public class A1Adept {
 		
 		
 		
-		System.out.println("Biggest: " + big.fName + big.lName + " (" + String.format(
+		System.out.println("Biggest: " + big.fName + " " + big.lName + " (" + String.format(
 				"%.2f", big.total) + ")" );
 		
-		System.out.println("Smallest: " + small.fName + small.lName + " (" + String.format(
+		System.out.println("Smallest: " + small.fName + " " + small.lName + " (" + String.format(
 				"%.2f", small.total) + ")" );
 		
 		
