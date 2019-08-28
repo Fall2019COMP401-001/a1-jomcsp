@@ -52,6 +52,7 @@ public class A1Jedi {
 									// makes so dont double count
 									if (!groceryList[k].bo && grocery1[j].equals( groceryList [k].name)) {
 										groceryList[k].indv += 1;
+										System.out.println("true")
 										groceryList[k].bo = true;
 									}
 								
@@ -62,6 +63,8 @@ public class A1Jedi {
 							}
 							//resets all indv buying
 							for (int z = 0; z < groceryList.length; z++) {
+								system.out.println("false")
+							
 								groceryList[z].bo = false;
 							}
 							
