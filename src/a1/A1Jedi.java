@@ -50,20 +50,20 @@ public class A1Jedi {
 									groceryList[k].count += quan[j];
 									
 									// makes so dont double count
-									if (groceryList[k].bo == false) {
+									if (!groceryList[k].bo) {
 										groceryList[k].indv += 1;
 										groceryList[k].bo = true;
 									}
 								
 								}
-								//resets all indv buying
-								for (int z = 0; z < groceryList.length; z++) {
-									groceryList[z].bo = false;
-								}
+								
+								
 								
 							}
-							
-							
+							//resets all indv buying
+							for (int z = 0; z < groceryList.length; z++) {
+								groceryList[z].bo = false;
+							}
 							
 						}
 						// creates the shoppper into my shopper array list

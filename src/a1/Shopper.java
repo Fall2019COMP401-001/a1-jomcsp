@@ -9,7 +9,7 @@ public class Shopper {
 		int[] quan;
 		String[] items;
 		double total = 0;
-		
+		has
 		
 		public Shopper (String fName, String lName, int count, int[] quan, String[] items) {
 			this.fName = fName;
