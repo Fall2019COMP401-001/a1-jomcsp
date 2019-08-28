@@ -46,7 +46,8 @@ public class A1Novice {
 				scan.close();
 				
 				for (int i = 0; i < count; i++) {
-					System.out.println(firstNameConverter(custFName, i) + " " + custLName[i] + ": " + String.format("%.2f", totalPrice[i])) ;
+					//  String.format("%.2f, value)
+					System.out.println(firstNameConverter(custFName, i) + " " + custLName[i] + ": " + String.format("%.2f", totalPrice[i]));
 				}
 				
 				
